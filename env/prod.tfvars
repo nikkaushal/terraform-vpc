@@ -1,0 +1,6 @@
+VPC_CIDR                = "192.168.10.0/24"
+PROJECT_NAME            = "roboshop"
+ENV                     = "dev"
+DEFAULT_VPC_ID          = "vpc-82bd6eff"
+DEFAULT_VPC_CIDR        = "172.31.0.0/16"
+DEFAULT_RT              = "rtb-2fe5ba51"
