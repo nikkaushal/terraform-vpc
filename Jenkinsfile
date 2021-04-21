@@ -1,24 +1,3 @@
-pipeline {
-    agent any
-    tools {
-    terraform 'terraform14'
-    }
-    
-    environment {
-        AWS = credentials('AWS')
-    }
-    stages {
+@Library('roboshop') _
 
-    stage('Terraform Apply') {
-    steps {
-    sh '''
-       export AWS_ACCESS_KEY_ID=${AWS_USR}
-       export AWS_SECRET_ACCESS_KEY=${AWS_PSW}
-       make dev-init
-       make dev-apply
-    '''
-    }
-    }
-
-    }
-}
+terraform(action="apply")
