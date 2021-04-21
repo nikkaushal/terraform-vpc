@@ -1,3 +1,3 @@
 @Library('roboshop') _
 
-terraform(action="apply")
+terraform("apply")
